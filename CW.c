@@ -71,12 +71,15 @@ void id()
 		findnNum = currentI;
 		currentI = currentI->next;
 		count++;
-		if (findnNum->val == id)
+		if (findnNum->val != id)
 		{
-			break;
+			count++;
 		}
-	}
-	printf("the number %d located in struct num %d.\n\n", id, count);
+		else
+		{
+			printf("the number %d located in struct num %d.\n\n", id, count);
+			count++;
+		}
 }
 void SaveToFile(int size)
 {
