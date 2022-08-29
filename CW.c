@@ -70,12 +70,13 @@ void id()
 	{
 		findnNum = currentI;
 		currentI = currentI->next;
+		count++;
 		if (findnNum->val == id)
 		{
-			count++;
+			break;
 		}
 	}
-	printf("the number %d returns %d time/s in structs.\n\n", id, count);
+	printf("the number %d located in struct num %d.\n\n", id, count);
 }
 void SaveToFile(int size)
 {
