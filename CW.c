@@ -63,14 +63,13 @@ void id()
 	struct Item* currentI = head;
 	struct Item* findnNum;
 	int id;
-	int count = 0;
+	int count = 1;
 	printf("pleas enter a value you wanna search in structs:");
 	scanf("%d", &id);
 	while (currentI != NULL)
 	{
 		findnNum = currentI;
 		currentI = currentI->next;
-		count++;
 		if (findnNum->val != id)
 		{
 			count++;
